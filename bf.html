@@ -1,0 +1,305 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> </title>
+<link rel="stylesheet" href="bestfilms.css">
+<link rel="stylesheet" href="animate.min.css"/>
+<style>
+    #header{
+    display: flex;
+    width: 100%;
+    color:red;
+    font-size:20px;
+    height: 30px;
+    padding: 20px;
+    margin-bottom: 100px;
+    }
+    .box{
+        
+    }
+    
+    #right{
+    background-color: rgb(129, 129, 129);
+    width: 20%;
+    height: 100%;
+    float: right;
+    border-radius: 10px;
+    margin: 0 5px;
+    }
+    
+    #left{
+    background-color: rgb(153, 152, 152);
+    width: 20%;
+    float: right;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 5px;
+    }
+    
+    #left2{
+    background-color: rgb(153, 152, 152);
+    width:80% ;
+    float: left;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 5px;
+    }
+    
+    body{
+        scroll-behavior: smooth;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(bg.jpg);
+    background-color: black;
+    margin-right: 150px;
+    margin-left: 150px;
+    }
+    #navigation{
+    color: turquoise;
+    font-size: 25px;
+    padding:10px ;
+    margin-bottom:20px;
+    
+    }/*
+    #footer{
+    float:none;
+    
+    }*/
+    .flex{
+        display:flex;
+        flex-direction: row;
+        margin: 0 5px;
+        align-content: stretch;
+        flex:1 1 1;
+    }
+    nav{
+        width: 100%;
+        margin: 0px auto;
+        float: left;
+    }
+    ul{
+        position: absolute;
+        list-style:none;
+        height:50px;
+        margin: 0;
+        padding: 0;
+        width:80%;
+        float: right;
+    }
+    
+    a{
+        color:red;
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style: none;
+        
+    }
+        
+    ul li {
+        color:red;
+        display:inline-block;
+        
+        line-height: 50px;
+    }
+    li:last-child{
+        float: right;
+    }
+    img{
+        width:200px;
+        margin: 5px 10px;
+    }
+    h2{
+        margin: 10px 20px;
+    }
+    .right{
+        display: flex;
+        font-weight: bold;
+        font-size: 20px;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    .right dd{
+        display: flex;
+        
+    }
+
+    ul li :hover{background-color: white;
+        transition: background-color 2s;}
+        .wrapper{
+            display: flex;
+            height:100% ;
+            width:auto ;
+        }
+        .items-row{
+            display: flex;
+            flex-flow: row nowrap;
+            height:10% ;
+            width: 90%; }
+            .img1 {
+                background-image: url(top2.jpg);
+                background-repeat: no-repeat;  
+             }
+             .img2 {
+                background-image: url(2film.jpg);
+                background-repeat: no-repeat;  
+             }
+             .item{
+                margin: 10px;
+                /*border:#666 solid 2px;*/
+                background-size:cover ;
+                background-position:center ;
+                box-sizing:border-box;
+                flex:1 1 3%;
+                }
+                .item:hover{
+                    flex:0.01 0.01 60%;
+                    
+                transition: flex 0.4s ease;
+                }
+                .items-row img{
+                    width:300px;
+                    visibility: hidden;
+                }
+.box{
+    transition-delay: 1s, 250ms;
+    transition-property: margin-right, color;
+    float: right;
+    padding: 12px;
+}
+dd{
+    margin: 7px 10px;
+}
+.navigation{
+    display: flex;
+    width: 100%;
+    background-color: #666;
+    border-radius: 10px;
+    margin:20px 0;
+}
+.navigation img{
+    display: inline;
+    width:200px;
+    margin:10px;
+}
+dd a{
+    
+    color:#000;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    margin: 15px;
+    padding:10px 30px;
+}/*
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}*/
+input{
+    height: 30px;
+    margin:10px 0;
+}
+#center{
+    background-color: rgb(153, 152, 152);
+    width:50% ;
+    float: left;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+#center img{
+    float: left;
+    margin:15px;
+}
+#center .irish{
+    margin:15px;
+}
+.irish img{
+    display:flex;
+    width: 95%;
+    margin: 15px 300px;
+    align-self:center;
+}
+.irish{}
+</style>
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+    <nav>
+        <ul >
+            <li class=" animated infinite pulse delay-1s slow" ><a href="#">bestfilms</a></li>
+            
+           <li> <input type="submit" value="Найти"><input type="search"></li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+
+<div class="navigation">
+<a href="irishman.html"><img src="top2.jpg"></a>
+<img src="2film.jpg">
+<img src="3film.jpg">
+<img src="1film.jpg">
+<img src="2film.jpg">
+<img src="3film.jpg">
+</div>
+
+
+<div class="flex">
+
+<div id="left"> <h2>жанры</h2>
+    <dl >
+        <dd><a href="#">Боевик</a> </dd>
+<dd><a href="#">Исторический </a> </dd>
+           <dd><a href="#"> Комедия</a> </dd>
+           <dd><a href="#"> Мелодрама</a></dd>
+           <dd><a href="#"> Музыкальный </a></dd>
+           <dd><a href="#"> Нуар</a> </dd>
+           <dd><a href="#">  Политический </a></dd>
+           <dd><a href="#"> Приключенческий</a></dd>
+           <dd><a href="#"> Сказка</a></dd>
+           <dd><a href="#">  Трагедия</a></dd>
+        <dd><a href="#">Вестерн</a></dd>
+        <dd><a href="#">Гангстерский </a> </dd>
+        <dd><a href="#">Детектив</a></dd>
+        <dd><a href="#">Драма</a></dd>
+    </dl> </div>
+<div id="left2"><h2>скоро на сайте</h2>
+    <div class="wrapper">
+        <div class="items-row">
+            <div class="item img1" >
+                
+       <img src="top2.jpg"width="300px"></div>
+       <div class="item img2">
+   <img src="2film.jpg"width="300px">
+   
+   </div>
+   
+   </div>
+</div>
+</div>
+
+<div id="right"><h2>список самых популярных фильмов</h2> 
+    <dl class="right"  >
+        
+        <img src="1film.jpg">
+        <img src="3film.jpg">
+    </dl></div>
+</div>
+
+
+
+</div>
+</div>
+</body>
+</html>
